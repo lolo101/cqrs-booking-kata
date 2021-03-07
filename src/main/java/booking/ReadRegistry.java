@@ -13,4 +13,7 @@ public class ReadRegistry {
     public Collection<Room> freeRooms(LocalDate arrival, LocalDate departure) {
         return rooms;
     }
+
+    public void booked(Booking booking) {
+    }
 }

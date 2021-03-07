@@ -8,15 +8,14 @@ import java.util.Collection;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class BookingTest {
-
-    private Collection<Room> initialRooms = Arrays.asList(
+class ReadRegistryTest {
+    private final Collection<Room> initialRooms = Arrays.asList(
             new Room(),
             new Room()
     );
 
     @Test
-    void should_see_free_rooms() {
+    void should_show_free_rooms() {
         ReadRegistry readRegistry = new ReadRegistry(initialRooms);
         LocalDate arrival = LocalDate.of(2021, 1, 1);
         LocalDate departure = LocalDate.of(2021, 2, 1);
